@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wp01_startapp", "wp01_startapp\wp01_startapp.csproj", "{14877C2C-28DD-4D59-8123-599B2BDA5824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wp02_simplecontrols", "wp02_simplecontrols\wp02_simplecontrols.csproj", "{75759EF4-3ABF-41F2-9AE3-484B846A6A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14877C2C-28DD-4D59-8123-599B2BDA5824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14877C2C-28DD-4D59-8123-599B2BDA5824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14877C2C-28DD-4D59-8123-599B2BDA5824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14877C2C-28DD-4D59-8123-599B2BDA5824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75759EF4-3ABF-41F2-9AE3-484B846A6A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75759EF4-3ABF-41F2-9AE3-484B846A6A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75759EF4-3ABF-41F2-9AE3-484B846A6A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75759EF4-3ABF-41F2-9AE3-484B846A6A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DF1332B-18FC-484C-839E-91D0AA101089}
+	EndGlobalSection
+EndGlobal
