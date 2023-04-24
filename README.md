@@ -24,8 +24,14 @@ Windows  Presentation Foundation
 - WPF 응용
 	- MahApps.Metro 디자인 적용
 	- MVVM 패턴
-	- 데이터바인딩 DB연동
 	
 4일차 MVVM View
 
 <img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf01.png" Width="700"/>
+
+## 5일차
+- WPF 응용
+	- MVVM 패턴
+	- MVVM framework / Caliburn
+	- 데이터바인딩 DB연동
+	
