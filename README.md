@@ -35,3 +35,13 @@ Windows  Presentation Foundation
 	- MVVM framework / Caliburn
 	- 데이터바인딩 DB연동
 	
+## 6일차
+- WPF 응용
+	- 영화검색앱
+		- TMDB OpenAPI
+		- MahApps.Metro
+		- MahApps.Metro.IconPacks
+		- Newtonsoft.Json
+		
+6일차 영화검색앱 중간
+<img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf03.png" Width="700"/>	
