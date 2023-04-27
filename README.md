@@ -55,7 +55,7 @@ Windows  Presentation Foundation
 		- youtube OpenAPI
 		- DB 데이터 바인딩
 
-## 8일차
+## 8일차(폴더는 7일차와 통합)
 - WPF 응용
 	- 영화검색앱
 		- DB 데이터 바인딩(MySQL)
@@ -67,3 +67,17 @@ Windows  Presentation Foundation
 영화검색앱
 
 <img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf05.gif" Width="700"/>	
+
+미세먼지 확인 앱 중간
+<img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf06.png" Width="700"/>	
+
+## 9일차
+- WPF 응용
+	- 미세먼지확인 앱 완료
+		- MahApps.Metro
+		- 데이터포털 OpenAPI
+		- DB 데이터바인딩(MySQL)
+	- 개인 포트폴리오 개발방식
+		- 네이버포털 OpenAPI
+		- 네이버, 카카오 OpenAPI
+		- 기타 OpenAPI
