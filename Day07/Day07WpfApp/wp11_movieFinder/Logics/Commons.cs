@@ -11,12 +11,20 @@ namespace wp11_movieFinder.Logics
 {
     internal class Commons
     {
-        // 연결문자열 담을 변수
+        // MS SQL 서버용 연결문자열 담을 변수
         public static readonly string connString = "Data Source=localhost;" + 
                                                     "Initial Catalog=pknu;" +
                                                     "Persist Security Info=True;" +
                                                     "User ID=sa;" +
                                                     "Password=12345;";
+
+        // MySQL용 연결문자열 담을 변수
+        public static readonly string myConnString = "Server=localhost;" +
+                                                     "Port=3306;" +
+                                                     "Database=miniproject;" +
+                                                     "Uid=root;" +
+                                                     "Pwd=12345;";
+
 
         // 메트로 다이얼로그 창을 위한 정적 메서드
         public static async Task<MessageDialogResult> ShowMessageAsync(string title, string message,

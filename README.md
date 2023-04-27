@@ -54,5 +54,16 @@ Windows  Presentation Foundation
 		- CefSharp
 		- youtube OpenAPI
 		- DB 데이터 바인딩
+
+## 8일차
+- WPF 응용
+	- 영화검색앱
+		- DB 데이터 바인딩(MySQL)
+	- 미세먼지 확인 앱 개발
+		- MahApps
+		- 데이터포털 OpenAPI
+		- DB 데이터바인딩(MySQL)
 		
-<img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf04.gif" Width="700"/>	
+영화검색앱
+
+<img src="https://github.com/Tarel-Github/pknu-wpf-2023/blob/main/images/wpf05.gif" Width="700"/>	
