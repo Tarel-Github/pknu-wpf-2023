@@ -58,7 +58,7 @@ namespace wp12_finedustCheck
                 {
                     var data = jsonResult["data"];
                     var json_array = data as JArray;
-                    Debug.WriteLine(jsonResult);
+
                     var dustSensors = new List<DustSensor>();
                     foreach( var sensor in json_array )
                     {
