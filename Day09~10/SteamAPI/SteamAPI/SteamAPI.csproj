@@ -209,6 +209,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="HelpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -221,6 +225,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Logics\Commons.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -231,8 +238,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\FavoriteData.cs" />
     <Compile Include="Models\Hero.cs" />
     <Compile Include="Modules\Converter.cs" />
+    <Compile Include="Modules\Favorite.cs" />
     <Compile Include="Modules\GetChart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

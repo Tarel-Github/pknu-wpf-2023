@@ -15,11 +15,10 @@
         </Grid.RowDefinitions>
         <Menu>
             <MenuItem Header="파일">
-                <MenuItem Header="종료" />
+                <MenuItem Header="종료" Click="Exit" />
             </MenuItem>
             <MenuItem Header="도움말">
-                <MenuItem Header="사용방법" />
-                <MenuItem Header="사용예시" />
+                <MenuItem Header="사용방법" Click="ShowHelp"/>
             </MenuItem>
         </Menu>
 

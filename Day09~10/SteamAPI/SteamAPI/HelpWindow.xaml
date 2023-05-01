@@ -1,0 +1,41 @@
+﻿<mah:MetroWindow x:Class="SteamAPI.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:SteamAPI"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="400" Width="450">
+    <Grid>
+        <RichTextBox>
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="블리자드에는 유저 네임과 배틀태그라는 개념이 있습니다."/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="배틀태그는 유저들에게 주어지는 일종의 주민번호 같은 개념으로"/>
+                    <LineBreak/>
+                    <Run Text="유저네임을 중복으로 설정하는 것이 가능하기 때문에 별도로 주어진 것입니다."/>
+                    <LineBreak/>
+                    <LineBreak/>
+
+                    <Run Text="아래는 입력 예시입니다. {유저네임 - 배틀테그} 로 작성했습니다."/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="CutePoteto-3121"/>
+                    <LineBreak/>
+                    <Run Text="전원차단-31635"/>
+                    <LineBreak/>
+                    <Run Text="네잎클로바-31564"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="네잎클로바는 프로필 미공개로 설정되어 있어 접근이 불가능 합니다."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</mah:MetroWindow>

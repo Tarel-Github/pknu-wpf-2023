@@ -8,7 +8,7 @@
       xmlns:local="clr-namespace:SteamAPI"
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="1200"
-      Title="MainPage">
+      Title="MainPage" Loaded="Page_Loaded">
 
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -21,7 +21,7 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
-            <Label Content="오버워치 전적 탐색기" VerticalAlignment="Center" HorizontalAlignment="Center"
+            <Label Content="오버워치 전적 탐색기(도움말 참조)" VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="30" FontWeight="Bold"/>
         </Grid>
 
@@ -48,7 +48,7 @@
                     Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="Btn_Search_Click"/>
             <Label Content="닉네임" 
                    FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <Label Content="베틀테그" Grid.Column="2"
+            <Label Content="베틀태그" Grid.Column="2"
                    FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
 
@@ -57,9 +57,11 @@
 
 
         <Grid Grid.Column="1" Grid.Row="2">
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="2*"/>
+
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
@@ -83,13 +85,13 @@
                 <Label x:Name="Lbl_Tag" Grid.Column="2" Content="" FontSize="15"
                        HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
             </Grid>
-            <Label Grid.Column="0" Content="플레이어(베틀테그)" Margin="5"
+            <Label Grid.Column="0" Content="플레이어(베틀테그)" Margin="5" x:Name="Lbl_viewName" Visibility="Collapsed"
                    FontSize="18"
                    HorizontalAlignment="Right"  VerticalAlignment="Center"/>
-            <Label Grid.Column="0" Grid.Row="1" Content="플레이 타임" Margin="5"
+            <Label Grid.Column="0" Grid.Row="1" Content="플레이 타임" Margin="5" x:Name="Lbl_viewTime" Visibility="Collapsed"
                    FontSize="18"
                    HorizontalAlignment="Right"  VerticalAlignment="Center"/>
-            <Label Grid.Column="0" Grid.Row="2" Content="승률" Margin="5" 
+            <Label Grid.Column="0" Grid.Row="2" Content="승률" Margin="5" x:Name="Lbl_viewWinrate" Visibility="Collapsed"
                    FontSize="18"
                    HorizontalAlignment="Right"  VerticalAlignment="Center"/>
             <TextBlock x:Name="Tbx_playedTime" Grid.Column="1" Grid.Row="1" Margin="5" TextWrapping="Wrap" Text=""
@@ -101,20 +103,32 @@
 
             <Grid Grid.Column="1" Grid.Row="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
 
                 </Grid.ColumnDefinitions>
                 <Button x:Name="Btn_FavoritePlus" Content="즐겨찾기 추가" 
-                        Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"
                         Style="{StaticResource MahApps.Styles.Button.Square.Accent}"
                         IsEnabled="False" Click="Btn_FavoritePlus_Click"/>
-                <Button x:Name="Btn_FavoriteView" Content="즐겨찾기 보기"
-                        Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"
-                        Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="Btn_FavoriteView_Click"/>
+                <Button x:Name="Btn_FavoriteUse" Content="즐겨찾기 적용"
+                        Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"
+                        Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="Btn_FavoriteUse_Click"/>
+
+                <Button x:Name="Btn_FavoriteDelete" Content="즐겨찾기 삭제" 
+                        Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"
+                        Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="Btn_FavoriteDelete_Click"/>
+
             </Grid>
-    
+
+            <DataGrid x:Name="Dgd_FavoriteList" Grid.Row="4"
+                  Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
+                  SelectionChanged="Dgd_FavoriteList_SelectionChanged" Grid.ColumnSpan="2" Margin="5"
+                      MouseDoubleClick="Dgd_FavoriteList_MouseDoubleClick"/>
+            <Button x:Name="reload"  Content="새로고침" HorizontalAlignment="Center" Margin="66,0,0,0" Grid.Row="5" VerticalAlignment="Center" Height="50"
+                    Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="reload_Click"/>
+
         </Grid>
 
     </Grid>
