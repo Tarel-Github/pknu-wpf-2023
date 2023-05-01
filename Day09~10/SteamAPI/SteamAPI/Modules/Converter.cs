@@ -15,6 +15,9 @@ namespace SteamAPI.Modules
             string koName ="";
             switch (name)
             {
+                case "allHeroes":
+                    koName = "모든 영웅";
+                    break;
                 case "ana":
                     koName = "아나";
                     break;
@@ -33,7 +36,7 @@ namespace SteamAPI.Modules
                 case "doomfist":
                     koName = "둠피스트";
                     break;
-                case "dva":
+                case "dVa":
                     koName = "디바";
                     break;
                 case "echo":
@@ -51,8 +54,8 @@ namespace SteamAPI.Modules
                 case "lucio":
                     koName = "루시우";
                     break;
-                case "mccree":
-                    koName = "맥크리";
+                case "cassidy":
+                    koName = "캐서디";
                     break;
                 case "mei":
                     koName = "메이";
@@ -81,8 +84,11 @@ namespace SteamAPI.Modules
                 case "sigma":
                     koName = "시그마";
                     break;
-                case "soldier: 76":
-                    koName = "솔저: 76";
+                case "sojourn":
+                    koName = "소전";
+                    break;
+                case "soldier76":
+                    koName = "솔저76";
                     break;
                 case "sombra":
                     koName = "솜브라";
@@ -138,11 +144,17 @@ namespace SteamAPI.Modules
                 case "ashe":
                     job = "딜러";
                     break;
+                case "baptiste":
+                    job = "힐러";
+                    break;
                 case "bastion":
                     job = "딜러";
                     break;
                 case "doomfist":
                     job = "탱커";
+                    break;
+                case "mercy":
+                    job = "힐러";
                     break;
                 case "genji":
                     job = "딜러";
@@ -153,7 +165,7 @@ namespace SteamAPI.Modules
                 case "junkrat":
                     job = "딜러";
                     break;
-                case "mccree":
+                case "cassidy":
                     job = "딜러";
                     break;
                 case "mei":
@@ -165,7 +177,10 @@ namespace SteamAPI.Modules
                 case "reaper":
                     job = "딜러";
                     break;
-                case "soldier: 76":
+                case "sojourn":
+                    job = "딜러";
+                    break;
+                case "soldier76":
                     job = "딜러";
                     break;
                 case "sombra":
@@ -227,7 +242,121 @@ namespace SteamAPI.Modules
             return job;
         }
 
+        public string Image(string name)
+        {
+            string path = "";
+            switch (name.ToLower())
+            {
+                case "allheroes":
+                    path = "Images/All.png";
+                    break;
+                case "ana":
+                    path = "Images/Hero/Ana.png";
+                    break;
+                case "ashe":
+                    path = "Images/Hero/Ashe.png";
+                    break;
+                case "baptiste":
+                    path = "Images/Hero/Bati.png";
+                    break;
+                case "bastion":
+                    path = "Images/Hero/Bas.png";
+                    break;
+                case "doomfist":
+                    path = "Images/Hero/Doom.png";
+                    break;
+                case "genji":
+                    path = "Images/Hero/Gen.png";
+                    break;
+                case "hanzo":
+                    path = "Images/Hero/Hanzo.png";
+                    break;
+                case "junkrat":
+                    path = "Images/Hero/Junk.png";
+                    break;
+                case "cassidy":
+                    path = "Images/Hero/Mc.png";
+                    break;
+                case "mei":
+                    path = "Images/Hero/Mei.png";
+                    break;
+                case "pharah":
+                    path = "Images/Hero/Para.png";
+                    break;
+                case "reaper":
+                    path = "Images/Hero/Reap.png";
+                    break;
+                case "sojourn":
+                    path = "Images/Hero/So.png";
+                    break;
+                case "soldier76":
+                    path = "Images/Hero/76.png";
+                    break;
+                case "sombra":
+                    path = "Images/Hero/Som.png";
+                    break;
+                case "symmetra":
+                    path = "Images/Hero/Sym.png";
+                    break;
+                case "tracer":
+                    path = "Images/Hero/Tracer.png";
+                    break;
+                case "widowmaker":
+                    path = "Images/Hero/Widow.png";
+                    break;
+                case "echo":
+                    path = "Images/Hero/Echo.png";
+                    break;
+                case "torbjorn":
+                    path = "Images/Hero/Tor.png";
+                    break;
+                case "zenyatta":
+                    path = "Images/Hero/Zenya.png";
+                    break;
+                case "dva":
+                    path = "Images/Hero/Dva.png";
+                    break;
+                case "mercy":
+                    path = "Images/Hero/Mercy.png";
+                    break;
+                case "orisa":
+                    path = "Images/Hero/Ori.png";
+                    break;
+                case "reinhardt":
+                    path = "Images/Hero/Rein.png";
+                    break;
+                case "roadhog":
+                    path = "Images/Hero/Hog.png";
+                    break;
+                case "sigma":
+                    path = "Images/Hero/Sig.png";
+                    break;
+                case "winston":
+                    path = "Images/Hero/Win.png";
+                    break;
+                case "wrecking ball":
+                    path = "Images/Hero/Wreck.png";
+                    break;
+                case "zarya":
+                    path = "Images/Hero/Za.png";
+                    break;
+                case "junkerqueen":
+                    path = "Images/Hero/Q.png";
+                    break;
+                case "ramattra":
+                    path = "Images/Hero/Rama.png";
+                    break;
+                case "kiriko":
+                    path = "Images/Hero/Kiri.png";
+                    break;
+                default:
+                    path = "Images/None.png";
+                    break;
 
+            }
+            return path;
+
+        }
 
     }
 

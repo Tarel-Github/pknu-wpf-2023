@@ -231,7 +231,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Data.cs" />
     <Compile Include="Models\Hero.cs" />
     <Compile Include="Modules\Converter.cs" />
     <Compile Include="Modules\GetChart.cs" />
@@ -261,6 +260,74 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Hero\Doom.png" />
+    <Resource Include="Images\Hero\Dva.png" />
+    <Resource Include="Images\Hero\Hog.png" />
+    <Resource Include="Images\Hero\Ori.png" />
+    <Resource Include="Images\Hero\Q.png" />
+    <Resource Include="Images\Hero\Rama.png" />
+    <Resource Include="Images\Hero\Rein.png" />
+    <Resource Include="Images\Hero\Sig.png" />
+    <Resource Include="Images\Hero\Win.png" />
+    <Resource Include="Images\Hero\Wreck.png" />
+    <Resource Include="Images\Hero\Za.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Rank\500.png" />
+    <Resource Include="Images\Rank\B.png" />
+    <Resource Include="Images\Rank\D.png" />
+    <Resource Include="Images\Rank\G.png" />
+    <Resource Include="Images\Rank\GM.png" />
+    <Resource Include="Images\Rank\M.png" />
+    <Resource Include="Images\Rank\P.png" />
+    <Resource Include="Images\Rank\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\76.png" />
+    <Resource Include="Images\Hero\Ana.png" />
+    <Resource Include="Images\Hero\Ashe.png" />
+    <Resource Include="Images\Hero\Bas.png" />
+    <Resource Include="Images\Hero\Bati.png" />
+    <Resource Include="Images\Hero\Bre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\Eco.png" />
+    <Resource Include="Images\Hero\Gen.png" />
+    <Resource Include="Images\Hero\Hanzo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\Junk.png" />
+    <Resource Include="Images\Hero\Kiri.png" />
+    <Resource Include="Images\Hero\Life.png" />
+    <Resource Include="Images\Hero\Lucio.png" />
+    <Resource Include="Images\Hero\Mc.png" />
+    <Resource Include="Images\Hero\Mei.png" />
+    <Resource Include="Images\Hero\Mercy.png" />
+    <Resource Include="Images\Hero\Moi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\Para.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\Reap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\So.png" />
+    <Resource Include="Images\Hero\Som.png" />
+    <Resource Include="Images\Hero\Syme.png" />
+    <Resource Include="Images\Hero\Tor.png" />
+    <Resource Include="Images\Hero\Tre.png" />
+    <Resource Include="Images\Hero\Widow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hero\Zenya.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
